@@ -53,6 +53,10 @@ class PrimePrinterHelper {
     }
 
     public void printPrimes() {
+        printPrimes(primes, numberOfPrimes);
+    }
+
+    private void printPrimes(int[] primes, int numberOfPrimes) {
         while (pageoffset <= numberOfPrimes) {
             System.out.print("The First ");
             System.out.print(numberOfPrimes);
