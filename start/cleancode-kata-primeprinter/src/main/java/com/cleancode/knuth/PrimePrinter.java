@@ -1,16 +1,5 @@
 package com.cleancode.knuth;
 
-public class PrimePrinter {
-    public static void main(String[] args) {
-        final int M = 1000;
-        final int RR = 50;
-        final int CC = 4;
-        PrimePrinterHelper primePrinterHelper = new PrimePrinterHelper(M, RR, CC);
-        primePrinterHelper.generatePrimes();
-        primePrinterHelper.printPrimes();
-    }
-}
-
 class PrimePrinterHelper {
     private final int M;
     private final int RR;
@@ -80,5 +69,16 @@ class PrimePrinterHelper {
             PAGENUMBER++;
             PAGEOFFSET += RR * CC;
         }
+    }
+}
+
+public class PrimePrinter {
+    public static void main(String[] args) {
+        final int M = 1000;
+        final int RR = 50;
+        final int CC = 4;
+        PrimePrinterHelper primePrinterHelper = new PrimePrinterHelper(M, RR, CC);
+        primePrinterHelper.generatePrimes();
+        primePrinterHelper.printPrimes();
     }
 }
